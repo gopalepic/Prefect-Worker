@@ -6,7 +6,6 @@
 .terraform.tfvars
 .terraform.tfstate.backup
 
-
 # Ignore Terraform plan files
 *.tfplan
 

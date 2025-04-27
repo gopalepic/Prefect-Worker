@@ -1,11 +1,5 @@
 
 ---
-
-### Step 9: Write Report (report.md)
-
-Create a `report.md` addressing the evaluation criteria:
-
-```markdown
 # DevOps Assignment Report
 
 ## Tool Choice: Terraform
@@ -20,11 +14,12 @@ I chose **Terraform** over CloudFormation for its cross-cloud compatibility, whi
 - **Challenge**: Ensuring the Prefect Worker could access Prefect Cloud from private subnets.
   - **Resolution**: Configured a NAT Gateway and verified outbound traffic via the worker’s security group.
 - **Challenge**: Debugging worker connectivity issues.
-  - **Resolution**: Enabled CloudWatch Logs and reviewed logs for errors related to API key or network issues.
+  
 - **Challenge**: Managing sensitive data (Prefect API key).
   - **Resolution**: Stored the key in Secrets Manager and granted the task execution role access.
 
 ## Suggestions for Improvement
+
 - **Auto-Scaling**: Configure an auto-scaling policy for the ECS service based on CPU/memory or queue depth.
 - **Monitoring**: Set up CloudWatch Alarms for worker health and Prefect flow failures.
 - **CI/CD**: Integrate Terraform with a CI/CD pipeline (e.g., GitHub Actions) for automated deployments.

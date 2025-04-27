@@ -19,4 +19,7 @@ This project deploys a Prefect Worker on Amazon ECS Fargate using Terraform to o
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/gopalepic/Prefect-Worker.git
-   
+
+
+## Video  
+ video of the whole configuration and setup is provided  
